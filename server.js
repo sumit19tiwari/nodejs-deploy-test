@@ -17,8 +17,8 @@ app.use((req, res, next) => {
 
 
 
-app.listen(port,()=>{
-    console.log(`Express app is listening at http://localhost:${port}`);
+app.listen(process.env.PORT || 5000,()=>{
+    console.log('Server run successfully');
 });
 
 
